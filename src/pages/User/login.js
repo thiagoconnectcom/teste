@@ -11,8 +11,7 @@ export default class Login extends Component {
     };
 
     Next = () => {
-        this.props.navigation.navigate('Register');
-        alert('ckljnasckl')
+        this.props.navigation.navigate('Home');
     }
 
     render() {
@@ -47,7 +46,7 @@ export default class Login extends Component {
                         secureTextEntry={true}
                     />
 
-                    <Button onPress={() => (this.Next)} title="Logar" />
+                    <Button onPress={this.Next} title="Logar" />
 
                 </View>
             </View>
