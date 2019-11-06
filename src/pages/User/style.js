@@ -1,9 +1,11 @@
 import React, { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
+    back: {
+        backgroundColor: "#f8f8f8",
+    },
     container: {
         flex: 1,
-        backgroundColor: "#f8f8f8",
         paddingHorizontal: 20
     },
 
@@ -42,6 +44,9 @@ const styles = StyleSheet.create({
     linkActive: {
         color: "#f75611",
         fontWeight: "bold"
+    },
+    mt: {
+        marginTop: 100
     }
 
 });

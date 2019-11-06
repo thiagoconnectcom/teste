@@ -14,15 +14,13 @@ import Home from './pages/Home';
 
 class LogoTitle extends React.Component {
     render() {
-        return <Image source={require("./assets/img/icon.png")} />;
+        return <Image style={{ width: 80, height: 20 }} source={require("./assets/img/icon.png")} />;
     }
 }
 
 
 const AppStack = createStackNavigator({
-    SplashScreen: {
-        screen: SplashScreen
-    },
+
     Home: {
         screen: Home
     }

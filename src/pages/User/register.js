@@ -18,9 +18,9 @@ export default class Login extends Component {
     render() {
         const { navigate } = this.props.navigation;
         return (
+            <ScrollView style={styles.back}>
+                <View style={styles.container}>
 
-            <View style={styles.container}>
-                <ScrollView>
                     <View style={styles.containerForm}>
                         <View style={styles.row}>
                             <Text>BTB</Text>
@@ -61,12 +61,12 @@ export default class Login extends Component {
                             secureTextEntry={true}
                         />
 
-                        <Button onPress={() => navigate('Home')} title="Cadastrar" />
+                        <Button title="Cadastrar" />
 
                     </View>
-                </ScrollView>
-            </View>
 
+                </View>
+            </ScrollView>
         )
     }
 }
